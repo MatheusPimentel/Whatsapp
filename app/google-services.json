@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "355616079270",
+    "firebase_url": "https://whatsapp-e9e7c.firebaseio.com",
+    "project_id": "whatsapp-e9e7c",
+    "storage_bucket": "whatsapp-e9e7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355616079270:android:5decbf2e9f545c81",
+        "android_client_info": {
+          "package_name": "toppeiradasgalaxias.androidstudio.com.whatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "355616079270-v7jl7mjsqfriafckrol2fjfplgh01kbs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "toppeiradasgalaxias.androidstudio.com.whatsapp",
+            "certificate_hash": "b79e64945acaca319037ec9fea78ea441a76b550"
+          }
+        },
+        {
+          "client_id": "355616079270-i305csv30u8d8801g8sbgsml0dveu3qj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1xgXitXeddLOltzYSrr7y8hv_YyLpxgE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "355616079270-i305csv30u8d8801g8sbgsml0dveu3qj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
