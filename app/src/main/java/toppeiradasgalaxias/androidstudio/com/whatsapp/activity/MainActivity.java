@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     private SlidingTabLayout slidingTabLayout;
     private ViewPager viewPager;
     private String identificadorContato;
+    //teste
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
