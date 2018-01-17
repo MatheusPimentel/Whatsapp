@@ -23,6 +23,7 @@ import com.google.firebase.auth.FirebaseUser;
 import toppeiradasgalaxias.androidstudio.com.whatsapp.R;
 import toppeiradasgalaxias.androidstudio.com.whatsapp.config.ConfiguracaoFirebase;
 import toppeiradasgalaxias.androidstudio.com.whatsapp.helper.Base64Custom;
+import toppeiradasgalaxias.androidstudio.com.whatsapp.helper.Preferencias;
 import toppeiradasgalaxias.androidstudio.com.whatsapp.model.Usuario;
 
 public class CadastroUsuarioActivity extends AppCompatActivity {
@@ -69,6 +70,9 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
                     String identificadorUsuario = Base64Custom.codificarBase64(usuario.getEmail());
                     usuario.setId(identificadorUsuario);
                     usuario.salvar();
+
+                    Preferencias preferencias = new Preferencias(CadastroUsuarioActivity.this);
+                    preferencias.salvarDados(identificadorUsuario);
 
                     abrirUsuarioLogado();
                 } else {

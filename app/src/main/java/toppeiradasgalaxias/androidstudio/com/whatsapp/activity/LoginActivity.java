@@ -16,6 +16,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import toppeiradasgalaxias.androidstudio.com.whatsapp.R;
 import toppeiradasgalaxias.androidstudio.com.whatsapp.config.ConfiguracaoFirebase;
+import toppeiradasgalaxias.androidstudio.com.whatsapp.helper.Base64Custom;
+import toppeiradasgalaxias.androidstudio.com.whatsapp.helper.Preferencias;
 import toppeiradasgalaxias.androidstudio.com.whatsapp.model.Usuario;
 
 public class LoginActivity extends AppCompatActivity {
@@ -66,6 +68,9 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
+                    Preferencias preferencias = new Preferencias(LoginActivity.this);
+                    String identificadorUsuarioLogado = Base64Custom.codificarBase64(usuario.getEmail());
+                    preferencias.salvarDados(identificadorUsuarioLogado);
                     Toast.makeText(LoginActivity.this, "Sucesso ao realizar o Login", Toast.LENGTH_SHORT).show();
                     abrirTelaPrincipal();
                 } else {
